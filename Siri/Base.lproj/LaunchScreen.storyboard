@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ezl-Qi-LJn">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Menlo.ttc">
+            <string>Menlo-Italic</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="hN3-fv-1L7">
+            <objects>
+                <viewController id="ezl-Qi-LJn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lw4-Fl-rmX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_fondbase" translatesAutoresizingMaskIntoConstraints="NO" id="slF-tm-cLl">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.10000000149011612" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="42Icons" translatesAutoresizingMaskIntoConstraints="NO" id="tRq-ao-yv7">
+                                <rect key="frame" x="67" y="231" width="225" height="225"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day 07 - Siri &amp; Recast AI " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZy-wG-lec">
+                                <rect key="frame" x="7.5" y="330" width="344.5" height="27"/>
+                                <fontDescription key="fontDescription" name="Menlo-Italic" family="Menlo" pointSize="22"/>
+                                <color key="textColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="slF-tm-cLl" firstAttribute="top" secondItem="l6F-Ur-TtS" secondAttribute="top" id="2dT-nt-Rq0"/>
+                            <constraint firstItem="tRq-ao-yv7" firstAttribute="centerX" secondItem="slF-tm-cLl" secondAttribute="centerX" constant="-8" id="N35-Vj-Nzx"/>
+                            <constraint firstItem="slF-tm-cLl" firstAttribute="leading" secondItem="l6F-Ur-TtS" secondAttribute="leading" id="NvA-Xw-e6q"/>
+                            <constraint firstItem="jZy-wG-lec" firstAttribute="centerX" secondItem="tRq-ao-yv7" secondAttribute="centerX" id="VuL-zU-uqI"/>
+                            <constraint firstItem="l6F-Ur-TtS" firstAttribute="bottom" secondItem="slF-tm-cLl" secondAttribute="bottom" id="Yrd-oz-Fh3"/>
+                            <constraint firstItem="tRq-ao-yv7" firstAttribute="centerY" secondItem="slF-tm-cLl" secondAttribute="centerY" id="nF7-OJ-AZz"/>
+                            <constraint firstItem="l6F-Ur-TtS" firstAttribute="trailing" secondItem="slF-tm-cLl" secondAttribute="trailing" id="sCO-yE-X2d"/>
+                            <constraint firstItem="jZy-wG-lec" firstAttribute="centerY" secondItem="tRq-ao-yv7" secondAttribute="centerY" id="wSv-Zk-p58"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="l6F-Ur-TtS"/>
+                    </view>
+                    <connections>
+                        <outlet property="view" destination="slF-tm-cLl" id="0rg-ET-DeM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kv2-dO-G8K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="42Icons" width="225" height="225"/>
+        <image name="image_fondbase" width="630" height="630"/>
+    </resources>
+</document>
